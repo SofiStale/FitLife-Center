@@ -7,8 +7,8 @@ Sito web scolastico per una palestra, realizzato con **HTML, CSS e JavaScript**.
 ### Struttura del sito
 
 - `index.html` — home page con collegamenti alle tre sezioni.
-- `sezione-a.html` — **Corsi**, con 6 corsi.
-- `sezione-b.html` — **Istruttori**, con 3 istruttori e relative specializzazioni.
+- `sezione-a.html` — **Corsi**, con 11 corsi.
+- `sezione-b.html` — **Istruttori**, con 6 istruttori e relative specializzazioni.
 - `sezione-c.html` — **Abbonamenti e orari**, con 3 piani e orari settimanali.
 - `style.css` — stile condiviso del progetto.
 - `script.js` — interazioni JavaScript della home.
@@ -23,11 +23,19 @@ Sito web scolastico per una palestra, realizzato con **HTML, CSS e JavaScript**.
 4. Boxe Fitness
 5. Strength Lab
 6. Pilates Core
+7. Nuoto
+8. Fitness
+9. Yoga
+10. Pilates
+11. Arti marziali
 
 **Sezione B — Istruttori**
 - Marco Riva — Strength Coach
 - Giulia Bianchi — Performance Coach
 - Elena Conti — Mobility Coach
+- Marek Hamsik — Personal Trainer
+- Dries Mertens — Fitness Coach
+- Lorenzo Insigne — Technique Coach
 
 **Sezione C — Abbonamenti e orari**
 - START — €29/mese
@@ -36,6 +44,9 @@ Sito web scolastico per una palestra, realizzato con **HTML, CSS e JavaScript**.
 - Orari completi dal lunedì alla domenica.
 
 Le immagini delle sezioni sono caricate da Unsplash tramite URL pubblici e sono accompagnate da testo alternativo descrittivo.
+
+### Integrazione dei file degli sviluppatori A e B
+I contenuti dei file `Sviluppatore_A.zip` e `Sviluppatore_B.zip` sono stati integrati nelle rispettive pagine del sito: i cinque corsi aggiuntivi sono in `sezione-a.html` e i tre profili aggiuntivi in `sezione-b.html`. Le immagini dei profili sono state impostate su URL Unsplash per mantenere una fonte coerente con il resto del progetto. Le pagine riutilizzano lo stile condiviso del repository.
 
 ## Workflow Git/GitHub
 
