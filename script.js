@@ -1,32 +1,35 @@
-const nav = document.getElementById("navLinks");
-const hamburger = document.getElementById("hamburger");
-const modal = document.getElementById("modal");
-const close = document.getElementById("close");
-const planName = document.getElementById("planName");
-const form = document.getElementById("form");
-const success = document.getElementById("success");
+document.addEventListener("DOMContentLoaded", () => {
+  // Aggiorna automaticamente l'anno nel footer.
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
 
-hamburger.addEventListener("click", () => nav.classList.toggle("open"));
-document.querySelectorAll(".nav-links a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
+  // Apre e chiude i dettagli dei corsi.
+  const buttons = document.querySelectorAll(".details-button");
 
-document.querySelectorAll(".choose").forEach(btn => {
-  btn.addEventListener("click", () => {
-    planName.textContent = btn.dataset.plan;
-    modal.classList.add("show");
-    success.textContent = "";
-    form.reset();
+  buttons.forEach((button) => {
+    button.setAttribute("aria-expanded", "false");
+
+    button.addEventListener("click", () => {
+      const courseId = button.dataset.course;
+      const details = document.getElementById(courseId);
+      const isOpen = details.classList.contains("open");
+
+      // Chiude tutti gli altri corsi.
+      document.querySelectorAll(".extra-details").forEach((item) => {
+        item.classList.remove("open");
+      });
+
+      buttons.forEach((item) => {
+        item.setAttribute("aria-expanded", "false");
+        item.textContent = "SCOPRI IL CORSO ↗";
+      });
+
+      // Alterna l'apertura del corso selezionato.
+      if (!isOpen) {
+        details.classList.add("open");
+        button.setAttribute("aria-expanded", "true");
+        button.textContent = "CHIUDI DETTAGLI ↑";
+      }
+    });
   });
-});
-
-close.addEventListener("click", () => modal.classList.remove("show"));
-modal.addEventListener("click", e => { if (e.target === modal) modal.classList.remove("show"); });
-
-form.addEventListener("submit", e => {
-  e.preventDefault();
-  success.textContent = "✓ Richiesta ricevuta. Ti contatteremo presto!";
-  form.reset();
-});
-
-document.addEventListener("keydown", e => {
-  if (e.key === "Escape") modal.classList.remove("show");
 });

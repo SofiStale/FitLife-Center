@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Life Center | I nostri istruttori</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo">FIT<span>LIFE</span></a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#istruttori">Istruttori</a>
+        <a href="#contatti">Contatti</a>
+    </nav>
+
+    <a href="#istruttori" class="nav-button">Scopri il team</a>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">ALLENATI CON I MIGLIORI</p>
+            <h1>Supera i tuoi<br><span>limiti.</span></h1>
+
+            <p class="hero-text">
+                Energia, passione e determinazione.
+                Tre istruttori, un solo obiettivo:
+                aiutarti a raggiungere la tua migliore versione.
+            </p>
+
+            <a href="#istruttori" class="main-button">
+                Scopri gli istruttori ↓
+            </a>
+        </div>
+
+        <div class="hero-visual">
+            <div class="circle circle-one"></div>
+            <div class="circle circle-two"></div>
+            <div class="hero-icon">🏋️</div>
+
+            <div class="floating-card">
+                <strong>YOUR BEST</strong>
+                <span>STARTS HERE.</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro" id="istruttori">
+        <p class="eyebrow">IL NOSTRO TEAM</p>
+        <h2>Tre personalità. <span>Un'unica squadra.</span></h2>
+
+        <p class="section-description">
+            Scopri i nostri tre istruttori e trova il percorso
+            più adatto ai tuoi obiettivi.
+        </p>
+
+        <div class="instructors">
+
+            <!-- HAMSik -->
+            <article class="trainer-card">
+                <div class="trainer-image hamsik">
+                    <span class="trainer-number">01</span>
+
+                    <img
+                        class="trainer-photo"
+                        src="https://images2.gazzettaobjects.it/methode_image/2018/05/07/Calcio/Foto%20Calcio%20-%20Trattate/AFP_14L5GJ-062-kfJF-U2601144271111JgE-620x349@Gazzetta-Web_articolo.jpg?v=201805071454"
+                        alt="Marek Hamsik"
+                        loading="lazy">
+
+                    <span class="sport-tag">FORZA & RESISTENZA</span>
+                </div>
+
+                <div class="trainer-info">
+                    <p class="trainer-role">PERSONAL TRAINER</p>
+                    <h3>Marek Hamsik</h3>
+
+                    <p>
+                        Determinazione e disciplina sono i suoi
+                        punti di forza. Propone allenamenti mirati
+                        al miglioramento della resistenza,
+                        della forza e della costanza.
+                    </p>
+
+                    <button class="details-button" data-trainer="hamsik">
+                        Scopri il programma <span>↗</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- MERTENS -->
+            <article class="trainer-card">
+                <div class="trainer-image mertens">
+                    <span class="trainer-number">02</span>
+
+                    <img
+                        class="trainer-photo"
+                        src="https://www.radioclub91.net/wp-content/uploads/2022/08/esult_gol_Mertens_CPur015.jpg"
+                        alt="Dries Mertens"
+                        loading="lazy">
+
+                    <span class="sport-tag">AGILITÀ & CARDIO</span>
+                </div>
+
+                <div class="trainer-info">
+                    <p class="trainer-role">FITNESS COACH</p>
+                    <h3>Dries Mertens</h3>
+
+                    <p>
+                        Dinamismo ed energia caratterizzano
+                        le sue sessioni. Il suo percorso punta
+                        su agilità, coordinazione e allenamenti
+                        cardiovascolari coinvolgenti.
+                    </p>
+
+                    <button class="details-button" data-trainer="mertens">
+                        Scopri il programma <span>↗</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- INSIGNE -->
+            <article class="trainer-card">
+                <div class="trainer-image insigne">
+                    <span class="trainer-number">03</span>
+
+                    <img
+                        class="trainer-photo"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Sr2N2vVeKDkRU9CX5FBoeDEOYQmi9sBENV_TCTgBtxAnI1glxE41UrI&s=10"
+                        alt="Lorenzo Insigne"
+                        loading="lazy">
+
+                    <span class="sport-tag">TECNICA & MOBILITÀ</span>
+                </div>
+
+                <div class="trainer-info">
+                    <p class="trainer-role">ATHLETIC COACH</p>
+                    <h3>Lorenzo Insigne</h3>
+
+                    <p>
+                        Precisione e rapidità sono al centro
+                        del suo metodo. Aiuta a migliorare
+                        coordinazione, mobilità e controllo
+                        del movimento.
+                    </p>
+
+                    <button class="details-button" data-trainer="insigne">
+                        Scopri il programma <span>↗</span>
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="cta" id="contatti">
+        <p class="eyebrow">IL TUO MOMENTO È ADESSO</p>
+        <h2>Pronto a metterti in gioco?</h2>
+
+        <p>Il primo passo verso il cambiamento inizia oggi.</p>
+
+        <button class="main-button" id="contact-button">
+            Inizia il tuo percorso
+        </button>
+
+        <p class="message" id="message"></p>
+    </section>
+</main>
+
+<footer>
+    <a href="#home" class="logo">FIT<span>LIFE</span></a>
+    <p>© 2026 Fit Life Center · Allenati. Cresci. Superati.</p>
+</footer>
+
+<dialog id="trainer-dialog">
+    <button class="close-dialog" id="close-dialog"
+        aria-label="Chiudi">✕</button>
+
+    <p class="eyebrow">IL PROGRAMMA</p>
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-description"></p>
+
+    <button class="main-button" id="dialog-ok">Ho capito</button>
+</dialog>
+
+</body>
+</html>
